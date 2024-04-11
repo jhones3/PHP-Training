@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Create Post</a>
+        <a href="#" class="right">Logout</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <img src="../images/john.jpg" alt="">
+            <h2>
+                John Doe
+
+                <a href="#" class="edit-profile-button">Edit Profile</a>
+            </h2>
+            <h5>@johndoe</h5>
+            <h5>johndoe@mail.test</h5>
+        </div>
+        <div class="main">
+            <h3>Edit Post</h3>
+
+            <div class="container">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="profile_picture"><b>Profile Picture</b></label>
+                    <br>
+                    <input type="file" name="profile_picture" id="profile_picture">
+                    <p></p>
+
+                    <label for="firstname"><b>First Name</b></label>
+                    <input type="text" value="John" placeholder="Enter First Name" name="firstname" required>
+
+                    <label for="lastname"><b>Last Name</b></label>
+                    <input type="text" value="Doe" placeholder="Enter Last Name" name="lastname" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" value="johndoe@mail.test" placeholder="Enter Email" name="email" required>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" value="johndoe" placeholder="Enter Username" name="username" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password">
+
+                    <label for="password_confirmation"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Enter Confirm Password" name="password_confirmation">
+
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
