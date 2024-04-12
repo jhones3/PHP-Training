@@ -88,12 +88,13 @@
       //     echo "You're not Hungry";
       //   }
       $grade = rand(60,100);
-      echo "<h3>Your Grade is $grade<h3>";
-      if ($grade >= 75){
-        echo "Pass";
-      }
-      if ($grade <= 74){
-        echo "Failed";
+      echo "Your Grade is<b> $grade</b></br>";
+      if ($grade < 75){
+        echo "Failed!";
+      }elseif($grade >= 75 && $grade <= 85){
+        echo "Need Improvement!";
+      }else{
+        echo "Great! You  are Passed!";
       }
     ?>
 </body>
